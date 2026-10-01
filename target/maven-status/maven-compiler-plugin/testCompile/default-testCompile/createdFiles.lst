@@ -1,0 +1,8 @@
+config\ConfigReader.class
+pages\BasePage.class
+tests\ui\BasicAuthUiTest.class
+tests\base\BaseTest.class
+api\BasicAuthClient.class
+pages\BasicAuthPage.class
+tests\api\BasicAuthApiTest.class
+config\Credentials.class

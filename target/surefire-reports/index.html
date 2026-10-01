@@ -1,0 +1,437 @@
+<!DOCTYPE html>
+
+<html>
+  <head>
+  <meta charset='utf-8'>
+  <title>TestNG reports</title>
+
+    <link type="text/css" href="testng-reports1.css" rel="stylesheet" id="ultra" />
+    <link type="text/css" href="testng-reports.css" rel="stylesheet" id="retro" disabled="false"/>
+    <script type="text/javascript" src="jquery-3.6.0.min.js"></script>
+    <script type="text/javascript" src="testng-reports.js"></script>
+    <script type="text/javascript" src="https://www.google.com/jsapi"></script>
+    <script type='text/javascript'>
+      google.load('visualization', '1', {packages:['table']});
+      google.setOnLoadCallback(drawTable);
+      var suiteTableInitFunctions = new Array();
+      var suiteTableData = new Array();
+    </script>
+    <!--
+      <script type="text/javascript" src="jquery-ui/js/jquery-ui-1.8.16.custom.min.js"></script>
+     -->
+  </head>
+
+  <body>    <div class="top-banner-root">
+      <span class="top-banner-title-font">Test results</span>
+      <button id="button" class="button">Switch Retro Theme</button> <!-- button -->
+      <br/>
+      <span class="top-banner-font-1">1 suite</span>
+    </div> <!-- top-banner-root -->
+    <div class="navigator-root">
+      <div class="navigator-suite-header">
+        <span>All suites</span>
+        <a href="#" title="Collapse/expand all the suites" class="collapse-all-link">
+          <img src="collapseall.gif" class="collapse-all-icon">
+          </img> <!-- collapse-all-icon -->
+        </a> <!-- collapse-all-link -->
+      </div> <!-- navigator-suite-header -->
+      <div class="suite">
+        <div class="rounded-window">
+          <div class="suite-header light-rounded-window-top">
+            <a href="#" panel-name="suite-Basic_Auth_Suite" class="navigator-link">
+              <span class="suite-name border-passed">Basic Auth Suite</span>
+            </a> <!-- navigator-link -->
+          </div> <!-- suite-header light-rounded-window-top -->
+          <div class="navigator-suite-content">
+            <div class="suite-section-title">
+              <span>Info</span>
+            </div> <!-- suite-section-title -->
+            <div class="suite-section-content">
+              <ul>
+                <li>
+                  <a href="#" panel-name="test-xml-Basic_Auth_Suite" class="navigator-link ">
+                    <span>C:\Projects\qa-automation-java\testng.xml</span>
+                  </a> <!-- navigator-link  -->
+                </li>
+                <li>
+                  <a href="#" panel-name="testlist-Basic_Auth_Suite" class="navigator-link ">
+                    <span class="test-stats">1 test</span>
+                  </a> <!-- navigator-link  -->
+                </li>
+                <li>
+                  <a href="#" panel-name="group-Basic_Auth_Suite" class="navigator-link ">
+                    <span>0 groups</span>
+                  </a> <!-- navigator-link  -->
+                </li>
+                <li>
+                  <a href="#" panel-name="times-Basic_Auth_Suite" class="navigator-link ">
+                    <span>Times</span>
+                  </a> <!-- navigator-link  -->
+                </li>
+                <li>
+                  <a href="#" panel-name="reporter-Basic_Auth_Suite" class="navigator-link ">
+                    <span>Reporter output</span>
+                  </a> <!-- navigator-link  -->
+                </li>
+                <li>
+                  <a href="#" panel-name="ignored-methods-Basic_Auth_Suite" class="navigator-link ">
+                    <span>Ignored methods</span>
+                  </a> <!-- navigator-link  -->
+                </li>
+                <li>
+                  <a href="#" panel-name="chronological-Basic_Auth_Suite" class="navigator-link ">
+                    <span>Chronological view</span>
+                  </a> <!-- navigator-link  -->
+                </li>
+              </ul>
+            </div> <!-- suite-section-content -->
+            <div class="result-section">
+              <div class="suite-section-title">
+                <span>Results</span>
+              </div> <!-- suite-section-title -->
+              <div class="suite-section-content">
+                <ul>
+                  <li>
+                    <span class="method-stats">8 methods,   8 passed</span>
+                  </li>
+                  <li>
+                    <span class="method-list-title passed">Passed methods</span>
+                    <span class="show-or-hide-methods passed">
+                      <a href="#" panel-name="suite-Basic_Auth_Suite" class="hide-methods passed suite-Basic_Auth_Suite"> (hide)</a> <!-- hide-methods passed suite-Basic_Auth_Suite -->
+                      <a href="#" panel-name="suite-Basic_Auth_Suite" class="show-methods passed suite-Basic_Auth_Suite"> (show)</a> <!-- show-methods passed suite-Basic_Auth_Suite -->
+                    </span>
+                    <div class="method-list-content passed suite-Basic_Auth_Suite">
+                      <span>
+                        <img src="passed.png" width="3%"/>
+                        <a href="#" panel-name="suite-Basic_Auth_Suite" title="tests.api.BasicAuthApiTest" class="method navigator-link" hash-for-method="noCredentialsReturn401">noCredentialsReturn401</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img src="passed.png" width="3%"/>
+                        <a href="#" panel-name="suite-Basic_Auth_Suite" title="tests.ui.BasicAuthUiTest" class="method navigator-link" hash-for-method="protectedContentIsHiddenForInvalidCredentials(Credentials[username=admin, password=***])">protectedContentIsHiddenForInvalidCredentials(Credentials[username=admin, password=***])</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img src="passed.png" width="3%"/>
+                        <a href="#" panel-name="suite-Basic_Auth_Suite" title="tests.ui.BasicAuthUiTest" class="method navigator-link" hash-for-method="protectedContentIsHiddenForInvalidCredentials(Credentials[username=9b2e2922, password=***])">protectedContentIsHiddenForInvalidCredentials(Credentials[username=9b2e2922, password=***])</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img src="passed.png" width="3%"/>
+                        <a href="#" panel-name="suite-Basic_Auth_Suite" title="tests.ui.BasicAuthUiTest" class="method navigator-link" hash-for-method="protectedContentIsHiddenForInvalidCredentials(Credentials[username=7ade6e5b, password=***])">protectedContentIsHiddenForInvalidCredentials(Credentials[username=7ade6e5b, password=***])</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img src="passed.png" width="3%"/>
+                        <a href="#" panel-name="suite-Basic_Auth_Suite" title="tests.ui.BasicAuthUiTest" class="method navigator-link" hash-for-method="successfulAuth">successfulAuth</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img src="passed.png" width="3%"/>
+                        <a href="#" panel-name="suite-Basic_Auth_Suite" title="tests.api.BasicAuthApiTest" class="method navigator-link" hash-for-method="validCredentialsReturn200">validCredentialsReturn200</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img src="passed.png" width="3%"/>
+                        <a href="#" panel-name="suite-Basic_Auth_Suite" title="tests.api.BasicAuthApiTest" class="method navigator-link" hash-for-method="wrongPasswordReturns401">wrongPasswordReturns401</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img src="passed.png" width="3%"/>
+                        <a href="#" panel-name="suite-Basic_Auth_Suite" title="tests.api.BasicAuthApiTest" class="method navigator-link" hash-for-method="wrongUsernameReturns401">wrongUsernameReturns401</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                    </div> <!-- method-list-content passed suite-Basic_Auth_Suite -->
+                  </li>
+                </ul>
+              </div> <!-- suite-section-content -->
+            </div> <!-- result-section -->
+          </div> <!-- navigator-suite-content -->
+        </div> <!-- rounded-window -->
+      </div> <!-- suite -->
+    </div> <!-- navigator-root -->
+    <div class="wrapper">
+      <div class="main-panel-root">
+        <div panel-name="suite-Basic_Auth_Suite" class="panel Basic_Auth_Suite">
+          <div class="suite-Basic_Auth_Suite-class-passed">
+            <div class="main-panel-header rounded-window-top">
+              <img src="passed.png"/>
+              <span class="class-name">tests.ui.BasicAuthUiTest</span>
+            </div> <!-- main-panel-header rounded-window-top -->
+            <div class="main-panel-content rounded-window-bottom">
+              <div class="method">
+                <div class="method-content">
+                  <a name="protectedContentIsHiddenForInvalidCredentials(Credentials[username=admin, password=***])">
+                  </a> <!-- protectedContentIsHiddenForInvalidCredentials(Credentials[username=admin, password=***]) -->
+                  <span class="method-name">protectedContentIsHiddenForInvalidCredentials</span>
+                  <span class="parameters">(Credentials[username=admin, password=***])</span>
+                  <em>
+(Invalid credentials: protected content is not shown)                  </em>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="protectedContentIsHiddenForInvalidCredentials(Credentials[username=9b2e2922, password=***])">
+                  </a> <!-- protectedContentIsHiddenForInvalidCredentials(Credentials[username=9b2e2922, password=***]) -->
+                  <span class="method-name">protectedContentIsHiddenForInvalidCredentials</span>
+                  <span class="parameters">(Credentials[username=9b2e2922, password=***])</span>
+                  <em>
+(Invalid credentials: protected content is not shown)                  </em>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="protectedContentIsHiddenForInvalidCredentials(Credentials[username=7ade6e5b, password=***])">
+                  </a> <!-- protectedContentIsHiddenForInvalidCredentials(Credentials[username=7ade6e5b, password=***]) -->
+                  <span class="method-name">protectedContentIsHiddenForInvalidCredentials</span>
+                  <span class="parameters">(Credentials[username=7ade6e5b, password=***])</span>
+                  <em>
+(Invalid credentials: protected content is not shown)                  </em>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="successfulAuth">
+                  </a> <!-- successfulAuth -->
+                  <span class="method-name">successfulAuth</span>
+                  <em>
+(Successful authorization with valid credentials)                  </em>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+            </div> <!-- main-panel-content rounded-window-bottom -->
+          </div> <!-- suite-Basic_Auth_Suite-class-passed -->
+          <div class="suite-Basic_Auth_Suite-class-passed">
+            <div class="main-panel-header rounded-window-top">
+              <img src="passed.png"/>
+              <span class="class-name">tests.api.BasicAuthApiTest</span>
+            </div> <!-- main-panel-header rounded-window-top -->
+            <div class="main-panel-content rounded-window-bottom">
+              <div class="method">
+                <div class="method-content">
+                  <a name="noCredentialsReturn401">
+                  </a> <!-- noCredentialsReturn401 -->
+                  <span class="method-name">noCredentialsReturn401</span>
+                  <em>
+(No Authorization header -> 401)                  </em>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="validCredentialsReturn200">
+                  </a> <!-- validCredentialsReturn200 -->
+                  <span class="method-name">validCredentialsReturn200</span>
+                  <em>
+(Valid credentials -> 200)                  </em>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="wrongPasswordReturns401">
+                  </a> <!-- wrongPasswordReturns401 -->
+                  <span class="method-name">wrongPasswordReturns401</span>
+                  <em>
+(Wrong password -> 401)                  </em>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="wrongUsernameReturns401">
+                  </a> <!-- wrongUsernameReturns401 -->
+                  <span class="method-name">wrongUsernameReturns401</span>
+                  <em>
+(Wrong username -> 401)                  </em>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+            </div> <!-- main-panel-content rounded-window-bottom -->
+          </div> <!-- suite-Basic_Auth_Suite-class-passed -->
+        </div> <!-- panel Basic_Auth_Suite -->
+        <div panel-name="test-xml-Basic_Auth_Suite" class="panel">
+          <div class="main-panel-header rounded-window-top">
+            <span class="header-content">C:\Projects\qa-automation-java\testng.xml</span>
+          </div> <!-- main-panel-header rounded-window-top -->
+          <div class="main-panel-content rounded-window-bottom">
+            <pre>
+&lt;?xml version=&quot;1.0&quot; encoding=&quot;UTF-8&quot;?&gt;
+&lt;!DOCTYPE suite SYSTEM &quot;https://testng.org/testng-1.0.dtd&quot;&gt;
+&lt;suite name=&quot;Basic Auth Suite&quot; guice-stage=&quot;DEVELOPMENT&quot; verbose=&quot;0&quot;&gt;
+  &lt;test thread-count=&quot;5&quot; name=&quot;Basic Auth&quot; verbose=&quot;0&quot;&gt;
+    &lt;classes&gt;
+      &lt;class name=&quot;tests.ui.BasicAuthUiTest&quot;/&gt;
+      &lt;class name=&quot;tests.api.BasicAuthApiTest&quot;/&gt;
+    &lt;/classes&gt;
+  &lt;/test&gt; &lt;!-- Basic Auth --&gt;
+&lt;/suite&gt; &lt;!-- Basic Auth Suite --&gt;
+            </pre>
+          </div> <!-- main-panel-content rounded-window-bottom -->
+        </div> <!-- panel -->
+        <div panel-name="testlist-Basic_Auth_Suite" class="panel">
+          <div class="main-panel-header rounded-window-top">
+            <span class="header-content">Tests for Basic Auth Suite</span>
+          </div> <!-- main-panel-header rounded-window-top -->
+          <div class="main-panel-content rounded-window-bottom">
+            <ul>
+              <li>
+                <span class="test-name">Basic Auth (2 classes)</span>
+              </li>
+            </ul>
+          </div> <!-- main-panel-content rounded-window-bottom -->
+        </div> <!-- panel -->
+        <div panel-name="group-Basic_Auth_Suite" class="panel">
+          <div class="main-panel-header rounded-window-top">
+            <span class="header-content">Groups for Basic Auth Suite</span>
+          </div> <!-- main-panel-header rounded-window-top -->
+          <div class="main-panel-content rounded-window-bottom">
+          </div> <!-- main-panel-content rounded-window-bottom -->
+        </div> <!-- panel -->
+        <div panel-name="times-Basic_Auth_Suite" class="panel">
+          <div class="main-panel-header rounded-window-top">
+            <span class="header-content">Times for Basic Auth Suite</span>
+          </div> <!-- main-panel-header rounded-window-top -->
+          <div class="main-panel-content rounded-window-bottom">
+            <div class="times-div">
+              <script type="text/javascript">
+suiteTableInitFunctions.push('tableData_Basic_Auth_Suite');
+function tableData_Basic_Auth_Suite() {
+var data = new google.visualization.DataTable();
+data.addColumn('number', 'Number');
+data.addColumn('string', 'Method');
+data.addColumn('string', 'Class');
+data.addColumn('number', 'Time (ms)');
+data.addRows(8);
+data.setCell(0, 0, 0)
+data.setCell(0, 1, 'successfulAuth')
+data.setCell(0, 2, 'tests.ui.BasicAuthUiTest')
+data.setCell(0, 3, 1590);
+data.setCell(1, 0, 1)
+data.setCell(1, 1, 'noCredentialsReturn401')
+data.setCell(1, 2, 'tests.api.BasicAuthApiTest')
+data.setCell(1, 3, 629);
+data.setCell(2, 0, 2)
+data.setCell(2, 1, 'protectedContentIsHiddenForInvalidCredentials')
+data.setCell(2, 2, 'tests.ui.BasicAuthUiTest')
+data.setCell(2, 3, 593);
+data.setCell(3, 0, 3)
+data.setCell(3, 1, 'protectedContentIsHiddenForInvalidCredentials')
+data.setCell(3, 2, 'tests.ui.BasicAuthUiTest')
+data.setCell(3, 3, 563);
+data.setCell(4, 0, 4)
+data.setCell(4, 1, 'protectedContentIsHiddenForInvalidCredentials')
+data.setCell(4, 2, 'tests.ui.BasicAuthUiTest')
+data.setCell(4, 3, 557);
+data.setCell(5, 0, 5)
+data.setCell(5, 1, 'wrongUsernameReturns401')
+data.setCell(5, 2, 'tests.api.BasicAuthApiTest')
+data.setCell(5, 3, 129);
+data.setCell(6, 0, 6)
+data.setCell(6, 1, 'wrongPasswordReturns401')
+data.setCell(6, 2, 'tests.api.BasicAuthApiTest')
+data.setCell(6, 3, 128);
+data.setCell(7, 0, 7)
+data.setCell(7, 1, 'validCredentialsReturn200')
+data.setCell(7, 2, 'tests.api.BasicAuthApiTest')
+data.setCell(7, 3, 124);
+window.suiteTableData['Basic_Auth_Suite']= { tableData: data, tableDiv: 'times-div-Basic_Auth_Suite'}
+return data;
+}
+              </script>
+              <span class="suite-total-time">Total running time: 4 seconds</span>
+              <div id="times-div-Basic_Auth_Suite">
+              </div> <!-- times-div-Basic_Auth_Suite -->
+            </div> <!-- times-div -->
+          </div> <!-- main-panel-content rounded-window-bottom -->
+        </div> <!-- panel -->
+        <div panel-name="reporter-Basic_Auth_Suite" class="panel">
+          <div class="main-panel-header rounded-window-top">
+            <span class="header-content">Reporter output for Basic Auth Suite</span>
+          </div> <!-- main-panel-header rounded-window-top -->
+          <div class="main-panel-content rounded-window-bottom">
+          </div> <!-- main-panel-content rounded-window-bottom -->
+        </div> <!-- panel -->
+        <div panel-name="ignored-methods-Basic_Auth_Suite" class="panel">
+          <div class="main-panel-header rounded-window-top">
+            <span class="header-content">0 ignored methods</span>
+          </div> <!-- main-panel-header rounded-window-top -->
+          <div class="main-panel-content rounded-window-bottom">
+          </div> <!-- main-panel-content rounded-window-bottom -->
+        </div> <!-- panel -->
+        <div panel-name="chronological-Basic_Auth_Suite" class="panel">
+          <div class="main-panel-header rounded-window-top">
+            <span class="header-content">Methods in chronological order</span>
+          </div> <!-- main-panel-header rounded-window-top -->
+          <div class="main-panel-content rounded-window-bottom">
+            <div class="chronological-class">
+              <div class="chronological-class-name">tests.ui.BasicAuthUiTest</div> <!-- chronological-class-name -->
+              <div class="configuration-method before">
+                <span class="method-name">setUp</span>
+                <span class="method-start">0 ms</span>
+              </div> <!-- configuration-method before -->
+              <div class="test-method">
+                <span class="method-name">protectedContentIsHiddenForInvalidCredentials(Credentials[username=admin, password=***])</span>
+                <span class="method-start">697 ms</span>
+              </div> <!-- test-method -->
+              <div class="configuration-method after">
+                <span class="method-name">tearDown</span>
+                <span class="method-start">1292 ms</span>
+              </div> <!-- configuration-method after -->
+              <div class="configuration-method before">
+                <span class="method-name">setUp</span>
+                <span class="method-start">1416 ms</span>
+              </div> <!-- configuration-method before -->
+              <div class="test-method">
+                <span class="method-name">protectedContentIsHiddenForInvalidCredentials(Credentials[username=9b2e2922, password=***])</span>
+                <span class="method-start">1872 ms</span>
+              </div> <!-- test-method -->
+              <div class="configuration-method after">
+                <span class="method-name">tearDown</span>
+                <span class="method-start">2440 ms</span>
+              </div> <!-- configuration-method after -->
+              <div class="configuration-method before">
+                <span class="method-name">setUp</span>
+                <span class="method-start">2570 ms</span>
+              </div> <!-- configuration-method before -->
+              <div class="test-method">
+                <span class="method-name">protectedContentIsHiddenForInvalidCredentials(Credentials[username=7ade6e5b, password=***])</span>
+                <span class="method-start">3010 ms</span>
+              </div> <!-- test-method -->
+              <div class="configuration-method after">
+                <span class="method-name">tearDown</span>
+                <span class="method-start">3567 ms</span>
+              </div> <!-- configuration-method after -->
+              <div class="configuration-method before">
+                <span class="method-name">setUp</span>
+                <span class="method-start">3707 ms</span>
+              </div> <!-- configuration-method before -->
+              <div class="test-method">
+                <span class="method-name">successfulAuth</span>
+                <span class="method-start">4149 ms</span>
+              </div> <!-- test-method -->
+              <div class="configuration-method after">
+                <span class="method-name">tearDown</span>
+                <span class="method-start">5739 ms</span>
+              </div> <!-- configuration-method after -->
+            </div> <!-- chronological-class -->
+            <div class="chronological-class">
+              <div class="chronological-class-name">tests.api.BasicAuthApiTest</div> <!-- chronological-class-name -->
+              <div class="test-method">
+                <span class="method-name">noCredentialsReturn401</span>
+                <span class="method-start">5895 ms</span>
+              </div> <!-- test-method -->
+              <div class="test-method">
+                <span class="method-name">validCredentialsReturn200</span>
+                <span class="method-start">6524 ms</span>
+              </div> <!-- test-method -->
+              <div class="test-method">
+                <span class="method-name">wrongPasswordReturns401</span>
+                <span class="method-start">6648 ms</span>
+              </div> <!-- test-method -->
+              <div class="test-method">
+                <span class="method-name">wrongUsernameReturns401</span>
+                <span class="method-start">6776 ms</span>
+              </div> <!-- test-method -->
+          </div> <!-- main-panel-content rounded-window-bottom -->
+        </div> <!-- panel -->
+      </div> <!-- main-panel-root -->
+    </div> <!-- wrapper -->
+  </body>
+<script type="text/javascript" src="testng-reports2.js"></script>
+</html>

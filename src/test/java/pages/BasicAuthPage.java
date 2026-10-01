@@ -1,51 +1,57 @@
 package pages;
 
+import config.ConfigReader;
+import config.Credentials;
 import org.openqa.selenium.By;
-import org.openqa.selenium.WebDriver;
-import org.openqa.selenium.WebElement;
-import org.openqa.selenium.support.ui.ExpectedConditions;
-import org.openqa.selenium.support.ui.WebDriverWait;
-import utils.ConfigReader;
+import org.openqa.selenium.chrome.ChromeDriver;
 
-import java.time.Duration;
+import java.nio.charset.StandardCharsets;
+import java.util.Base64;
+import java.util.Map;
 
-public class BasicAuthPage {
-    private WebDriver driver;
-    private WebDriverWait wait;
+public class BasicAuthPage extends BasePage {
 
-    private By successMessageLocator = By.cssSelector("div.example p");
+    private static final By HEADER = By.cssSelector("div.example h3");
+    private static final By MESSAGE = By.cssSelector("div.example p");
 
-    public BasicAuthPage(WebDriver driver) {
-        this.driver = driver;
-        this.wait = new WebDriverWait(driver, Duration.ofSeconds(10));
-    }
+    private final ChromeDriver chrome;
 
-    //Dynamic opens URL, put credentials in line
-    public void openWithCredentials(String username, String password) {
-        String baseUrl = ConfigReader.getProperty("base.url");
-        String path = ConfigReader.getProperty("basic.auth.path");
-
-        String url;
-        if (username != null && !username.isEmpty() && password != null && !password.isEmpty()) {
-            url = baseUrl.replace("https://", "https://" + username + ":" + password + "@") + path;
-        } else {
-            // Если креды пустые — открываем чистый URL (проверка негативного сценария)
-            url = baseUrl + path;
-        }
-        driver.get(url);
+    public BasicAuthPage(ChromeDriver driver) {
+        super(driver);
+        this.chrome = driver;
     }
 
     /**
-     * Check successful message
+     * Basic Auth is a native browser modal that Selenium cannot see or interact with,
+     * so the Authorization header is sent via CDP instead of typing into the dialog.
      */
-    public boolean isSuccessMessageDisplayed() {
-        try {
-            WebElement element = wait.until(ExpectedConditions.visibilityOfElementLocated(successMessageLocator));
-            return element.getText().contains("Congratulations! You must have the proper credentials.");
-        } catch (Exception e) {
-            return false;
-        }
+    public BasicAuthPage authorizeAs(Credentials credentials) {
+        String raw = credentials.username() + ":" + credentials.password();
+        String token = Base64.getEncoder().encodeToString(raw.getBytes(StandardCharsets.UTF_8));
+        chrome.executeCdpCommand("Network.enable", Map.of());
+        chrome.executeCdpCommand("Network.setExtraHTTPHeaders",
+                Map.of("headers", Map.of("Authorization", "Basic " + token)));
+        return this;
     }
 
+    public BasicAuthPage open() {
+        driver.get(ConfigReader.baseUrl() + ConfigReader.basicAuthPath());
+        return this;
+    }
 
+    public String getHeader() {
+        return getText(HEADER);
+    }
+
+    public String getMessage() {
+        return getText(MESSAGE);
+    }
+
+    /**
+     * True only if the protected content (the success message) is present on the page.
+     * With invalid credentials the browser shows its native auth modal and a blank page.
+     */
+    public boolean isAuthorized() {
+        return !driver.findElements(MESSAGE).isEmpty();
+    }
 }

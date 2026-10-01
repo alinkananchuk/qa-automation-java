@@ -1,0 +1,100 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testng-results ignored="0" total="8" passed="8" failed="0" skipped="0">
+  <reporter-output>
+  </reporter-output>
+  <suite started-at="2026-10-01T21:39:30 CEST" name="Basic Auth Suite" finished-at="2026-10-01T21:39:37 CEST" duration-ms="6937">
+    <groups>
+    </groups>
+    <test started-at="2026-10-01T21:39:30 CEST" name="Basic Auth" finished-at="2026-10-01T21:39:37 CEST" duration-ms="6937">
+      <class name="tests.api.BasicAuthApiTest">
+        <test-method signature="noCredentialsReturn401()[pri:0, instance:tests.api.BasicAuthApiTest@29215f06]" started-at="2026-10-01T21:39:36 CEST" name="noCredentialsReturn401" description="No Authorization header -&gt; 401" finished-at="2026-10-01T21:39:37 CEST" duration-ms="629" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- noCredentialsReturn401 -->
+        <test-method signature="validCredentialsReturn200()[pri:0, instance:tests.api.BasicAuthApiTest@29215f06]" started-at="2026-10-01T21:39:37 CEST" name="validCredentialsReturn200" description="Valid credentials -&gt; 200" finished-at="2026-10-01T21:39:37 CEST" duration-ms="124" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- validCredentialsReturn200 -->
+        <test-method signature="wrongPasswordReturns401()[pri:0, instance:tests.api.BasicAuthApiTest@29215f06]" started-at="2026-10-01T21:39:37 CEST" name="wrongPasswordReturns401" description="Wrong password -&gt; 401" finished-at="2026-10-01T21:39:37 CEST" duration-ms="128" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- wrongPasswordReturns401 -->
+        <test-method signature="wrongUsernameReturns401()[pri:0, instance:tests.api.BasicAuthApiTest@29215f06]" started-at="2026-10-01T21:39:37 CEST" name="wrongUsernameReturns401" description="Wrong username -&gt; 401" finished-at="2026-10-01T21:39:37 CEST" duration-ms="129" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- wrongUsernameReturns401 -->
+      </class> <!-- tests.api.BasicAuthApiTest -->
+      <class name="tests.ui.BasicAuthUiTest">
+        <test-method is-config="true" signature="setUp()[pri:0, instance:tests.ui.BasicAuthUiTest@2c767a52]" started-at="2026-10-01T21:39:30 CEST" name="setUp" finished-at="2026-10-01T21:39:31 CEST" duration-ms="697" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setUp -->
+        <test-method signature="protectedContentIsHiddenForInvalidCredentials(config.Credentials)[pri:0, instance:tests.ui.BasicAuthUiTest@2c767a52]" started-at="2026-10-01T21:39:31 CEST" name="protectedContentIsHiddenForInvalidCredentials" description="Invalid credentials: protected content is not shown" data-provider="invalidCredentials" finished-at="2026-10-01T21:39:32 CEST" duration-ms="593" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[Credentials[username=admin, password=***]]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- protectedContentIsHiddenForInvalidCredentials -->
+        <test-method is-config="true" signature="tearDown()[pri:0, instance:tests.ui.BasicAuthUiTest@2c767a52]" started-at="2026-10-01T21:39:32 CEST" name="tearDown" finished-at="2026-10-01T21:39:32 CEST" duration-ms="124" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- tearDown -->
+        <test-method is-config="true" signature="setUp()[pri:0, instance:tests.ui.BasicAuthUiTest@2c767a52]" started-at="2026-10-01T21:39:32 CEST" name="setUp" finished-at="2026-10-01T21:39:32 CEST" duration-ms="455" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setUp -->
+        <test-method signature="protectedContentIsHiddenForInvalidCredentials(config.Credentials)[pri:0, instance:tests.ui.BasicAuthUiTest@2c767a52]" started-at="2026-10-01T21:39:32 CEST" name="protectedContentIsHiddenForInvalidCredentials" description="Invalid credentials: protected content is not shown" data-provider="invalidCredentials" finished-at="2026-10-01T21:39:33 CEST" duration-ms="563" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[Credentials[username=9b2e2922, password=***]]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- protectedContentIsHiddenForInvalidCredentials -->
+        <test-method is-config="true" signature="tearDown()[pri:0, instance:tests.ui.BasicAuthUiTest@2c767a52]" started-at="2026-10-01T21:39:33 CEST" name="tearDown" finished-at="2026-10-01T21:39:33 CEST" duration-ms="130" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- tearDown -->
+        <test-method is-config="true" signature="setUp()[pri:0, instance:tests.ui.BasicAuthUiTest@2c767a52]" started-at="2026-10-01T21:39:33 CEST" name="setUp" finished-at="2026-10-01T21:39:33 CEST" duration-ms="440" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setUp -->
+        <test-method signature="protectedContentIsHiddenForInvalidCredentials(config.Credentials)[pri:0, instance:tests.ui.BasicAuthUiTest@2c767a52]" started-at="2026-10-01T21:39:33 CEST" name="protectedContentIsHiddenForInvalidCredentials" description="Invalid credentials: protected content is not shown" data-provider="invalidCredentials" finished-at="2026-10-01T21:39:34 CEST" duration-ms="557" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[Credentials[username=7ade6e5b, password=***]]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- protectedContentIsHiddenForInvalidCredentials -->
+        <test-method is-config="true" signature="tearDown()[pri:0, instance:tests.ui.BasicAuthUiTest@2c767a52]" started-at="2026-10-01T21:39:34 CEST" name="tearDown" finished-at="2026-10-01T21:39:34 CEST" duration-ms="140" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- tearDown -->
+        <test-method is-config="true" signature="setUp()[pri:0, instance:tests.ui.BasicAuthUiTest@2c767a52]" started-at="2026-10-01T21:39:34 CEST" name="setUp" finished-at="2026-10-01T21:39:34 CEST" duration-ms="442" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setUp -->
+        <test-method signature="successfulAuth()[pri:0, instance:tests.ui.BasicAuthUiTest@2c767a52]" started-at="2026-10-01T21:39:34 CEST" name="successfulAuth" description="Successful authorization with valid credentials" finished-at="2026-10-01T21:39:36 CEST" duration-ms="1590" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- successfulAuth -->
+        <test-method is-config="true" signature="tearDown()[pri:0, instance:tests.ui.BasicAuthUiTest@2c767a52]" started-at="2026-10-01T21:39:36 CEST" name="tearDown" finished-at="2026-10-01T21:39:36 CEST" duration-ms="153" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- tearDown -->
+      </class> <!-- tests.ui.BasicAuthUiTest -->
+    </test> <!-- Basic Auth -->
+  </suite> <!-- Basic Auth Suite -->
+</testng-results>
